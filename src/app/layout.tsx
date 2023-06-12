@@ -20,6 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <!-- Messenger Chat plugin Code --> */}
+        <div id="fb-root"></div>
+        {/* <!-- Your Chat plugin code --> */}
+        <div id="fb-customer-chat" className="fb-customerchat"></div>
         <main>
           <div className="tm-container">
             <div className="tm-row">
