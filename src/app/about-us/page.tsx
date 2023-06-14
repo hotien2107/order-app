@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -6,10 +7,12 @@ const AboutUs = () => {
       <div className="tm-black-bg tm-mb-20 tm-about-box-1">
         <h2 className="tm-text-primary tm-about-header">About Wave Cafe</h2>
         <div className="tm-list-item tm-list-item-2">
-          <img
-            src="img/about-1.png"
+          <Image
+            src="/about-1.png"
             alt="Image"
             className="tm-list-item-img tm-list-item-img-big"
+            width={200}
+            height={200}
           />
           <div className="tm-list-item-text-2">
             <p>
@@ -32,10 +35,12 @@ const AboutUs = () => {
               Duis bibendum erat nec ipsum consectetur sodales.
             </p>
           </div>
-          <img
-            src="img/about-2.png"
+          <Image
+            src="/about-2.png"
             alt="Image"
             className="tm-list-item-img tm-list-item-img-big tm-img-right"
+            width={200}
+            height={200}
           />
         </div>
         <p>

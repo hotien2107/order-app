@@ -34,7 +34,7 @@ const Contract = () => {
           </div>
           <div className="tm-form-group tm-mb-30">
             <textarea
-              rows={6}
+              rows={5}
               name="message"
               className="tm-form-control"
               placeholder="Message"

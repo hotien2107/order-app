@@ -33,7 +33,6 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <Footer />
           <BackgroundVideo />
         </main>
         <Script id="fb-messenger" strategy="lazyOnload">
