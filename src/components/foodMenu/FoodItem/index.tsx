@@ -3,13 +3,13 @@ import { FoodItemProps } from "./types";
 import Image from "next/image";
 
 const FoodItem = (props: FoodItemProps) => {
-  const { img, name, price, desc } = props;
+  const { image, name, price, desc } = props;
 
   return (
     <div className="tm-list-item">
       <Image
-        src={img.src}
-        alt={img.alt ?? "image"}
+        src={image}
+        alt={image + "image"}
         className="tm-list-item-img"
         width={100}
         height={100}

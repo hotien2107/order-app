@@ -1,8 +1,5 @@
 export interface FoodItemProps {
-  img: {
-    src: string;
-    alt?: string;
-  };
+  image: string;
   name: string;
   price: number;
   desc: string;
