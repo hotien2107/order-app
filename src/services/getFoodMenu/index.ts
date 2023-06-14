@@ -1,12 +1,16 @@
 import { FoodMenuInterface } from "@/components/foodMenu/types";
-import axios from "axios";
 
 const getFoodMenu = async (): Promise<FoodMenuInterface[]> => {
   try {
-    const response = await axios.get(
+    const response = await fetch(
       "https://order-app-services-production.up.railway.app/food-menu"
     );
-    return response.data;
+
+    if (!response.ok) {
+      throw response;
+    }
+    
+    return response.json();
   } catch (error) {
     throw error;
   }
