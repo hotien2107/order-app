@@ -3,7 +3,10 @@ import { FoodMenuInterface } from "@/components/foodMenu/types";
 const getFoodMenu = async (): Promise<FoodMenuInterface[]> => {
   try {
     const response = await fetch(
-      "https://order-app-services-production.up.railway.app/api/foodGroup"
+      "https://order-app-services-production.up.railway.app/api/foodGroup",
+      {
+        next: { revalidate: 1000 },
+      }
     );
 
     if (!response.ok) {
