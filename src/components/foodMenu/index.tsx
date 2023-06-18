@@ -21,7 +21,7 @@ const FoodList = (props: FoodMenuProps) => {
           {foodMenuData.map((item) => {
             return (
               <li
-                key={item.id}
+                key={item.ID}
                 onClick={() => {
                   setCurrTab(item);
                 }}
@@ -29,10 +29,10 @@ const FoodList = (props: FoodMenuProps) => {
                 <a
                   className={
                     "tm-tab-link cursor-pointer" +
-                    (item.group === currTab.group ? " active" : "")
+                    (item.name === currTab.name ? " active" : "")
                   }
                 >
-                  {item.group}
+                  {item.name}
                 </a>
               </li>
             );
@@ -42,7 +42,7 @@ const FoodList = (props: FoodMenuProps) => {
       <div id="cold" className="tm-tab-content">
         <div className="tm-list">
           <div className="tm-list">
-            {currTab.foodList.map((foodItem, key) => {
+            {currTab.foodList?.map((foodItem, key) => {
               return <FoodItem {...foodItem} key={key} />;
             })}
           </div>

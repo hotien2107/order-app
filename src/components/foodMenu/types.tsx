@@ -5,7 +5,7 @@ export interface FoodMenuProps {
 }
 
 export interface FoodMenuInterface {
-  id: React.Key;
-  group: string;
+  ID: React.Key;
+  name: string;
   foodList: FoodItemProps[];
 }
